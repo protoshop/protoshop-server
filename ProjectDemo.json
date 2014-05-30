@@ -1,0 +1,306 @@
+{
+	"appID": "9b66fa122db012d80c9d36f76caf149b",
+	"appName": "Demo",
+	"appPlatform": "iOS",
+	"pageNum": 2,
+	"scences": 
+	[
+		{
+			"id": 1386064627839,
+      		"order": 0,
+			"name": "scence1",
+			"background": "fce742600bb0fa7c2841bb4b34db7e09.png",
+			"elements": 
+			[
+				{
+					"x": 0,
+					"y": 0,
+					"height": 60,
+					"width": 320,
+					"type": "ImageView",
+					"imageName":"",
+					"elements":
+					[
+						{
+							"x": 0,
+							"y": 0,
+							"height": 60,
+							"width": 320,
+							"type": "Label",
+							"textFontSize":16,
+							"textFont":"system",
+							"text":"首页",
+							"alignment" :1,
+							"textColor":{"bkColorRed":0.0,"bkColorGreen":0.0,"bkColorBlue":0.0,"bkAlpha":1.0},
+							"bgColor":{"bkColorRed":1.0,"bkColorGreen":1.0,"bkColorBlue":1.0,"bkAlpha":0.0},
+							"elements":{}
+						},{
+							"x": 250,
+							"y": 0,
+							"height": 60,
+							"width": 60,
+							"type": "Button",
+							"title":">>",
+							"elements":{},
+							"actions":
+		 					[
+								{
+								 	"transitionType":"push",
+								 	"transitionDelay": 0, 
+								 	"transitionDirection": "left",
+								 	"transitionDuration": 0.25,
+								 	"target": 1386064627840,
+								 	"type": "jumpto"
+		 						}
+		 					]
+						}
+					]
+				},{
+
+					"x": 0,
+					"y": 60,
+					"height": 508,
+					"width": 320,
+					"type": "ScrollView",
+					"bgColor":{"bkColorRed":1.0,"bkColorGreen":1.0,"bkColorBlue":1.0,"bkAlpha":1.0},
+					"contentSize":{"contentSizeWidth":320,"contentSizeHeight":1016},
+					"contentOffset":{"anchorOriginX":0,"anchorOriginY":0},
+					"orientation":"horizontal or vertical",
+					"elements":
+					[
+						{ 
+							"x": 0,
+							"y": 0,
+							"height": 200,
+							"width": 320,
+							"type": "ScrollView",
+							"bgColor":{"bkColorRed":0.0,"bkColorGreen":0.0,"bkColorBlue":1.0,"bkAlpha":0.0},
+							"contentSize":{"contentSizeWidth":640,"contentSizeHeight":200},
+							"contentOffset":{"anchorOriginX":0,"anchorOriginY":0},
+							"orientation":"horizontal or vertical",
+							"elements":
+							[
+								{
+									"x": 0,
+									"y": 0,
+									"height": 200,
+									"width": 320,
+									"type": "ImageView",
+									"elements":{},
+									"imageName":"fce742600bb0fa7c2841bb4b34db7e09.png"
+								},{
+									"x": 320,
+									"y": 0,
+									"height": 200,
+									"width": 320,
+									"type": "ImageView",
+									"elements":{},
+									"imageName":"fce742600bb0fa7c2841bb4b34db7e09.png"
+								}
+							]
+						},{
+							"x": 0,
+							"y": 200,
+							"height": 200,
+							"width": 320,
+							"type": "Button",
+							"title":"按钮1",
+							"elements":{},
+							"actions":
+		 					[
+								{
+								 	"transitionType":"push",
+								 	"transitionDelay": 0, 
+								 	"transitionDirection": "left",
+								 	"transitionDuration": 0.25,
+								 	"target": 1386064627840,
+								 	"type": "jumpto"
+		 						}
+		 					]
+						},{"x": 0,
+							"y": 400,
+							"height": 200,
+							"width": 320,
+							"type": "Button",
+							"title":"按钮2",
+							"elements":{},
+							"actions":
+		 					[
+								{
+								 	"transitionType":"push",
+								 	"transitionDelay": 0, 
+								 	"transitionDirection": "left",
+								 	"transitionDuration": 0.25,
+								 	"target": 1386064627840,
+								 	"type": "jumpto"
+		 						}
+		 					]
+						},{"x": 0,
+							"y": 600,
+							"height": 200,
+							"width": 320,
+							"type": "Button",
+							"title":"按钮3",
+							"elements":{},
+							"actions":
+		 					[
+								{
+								 	"transitionType":"push",
+								 	"transitionDelay": 0, 
+								 	"transitionDirection": "left",
+								 	"transitionDuration": 0.25,
+								 	"target": 1386064627840,
+								 	"type": "jumpto"
+		 						}
+		 					]
+						},{
+							"x": 0,
+							"y": 800,
+							"height": 200,
+							"width": 320,
+							"type": "Button",
+							"title":"按钮4",
+							"elements":{},
+							"actions":
+		 					[
+								{
+								 	"transitionType":"push",
+								 	"transitionDelay": 0, 
+								 	"transitionDirection": "left",
+								 	"transitionDuration": 0.25,
+								 	"target": 1386064627840,
+								 	"type": "jumpto"
+		 						}
+		 					]
+						}
+					]
+				}
+			]
+		}, {
+			"id": 1386064627840,
+      		"order": 1,
+			"name": "scence2",
+			"background": "1397717678350.png",
+			"elements":
+			[
+				{
+					"x": 0,
+					"y": 0,
+					"height": 60,
+					"width": 320,
+					"type": "ImageView",
+					"imageName":"image.png",
+					"elements":
+					[
+						{
+							"x": 70,
+							"y": 5,
+							"height": 20,
+							"width": 250,
+							"type": "Label",
+							"textFontSize":16,
+							"textFont":"",
+							"alignment" :1,
+							"text":"上海-昆明",
+							"elements":{},
+							"textColor":{"bkColorRed":0.0,"bkColorGreen":0.0,"bkColorBlue":0.0,"bkAlpha":1.0},
+							"bgColor":{"bkColorRed":1.0,"bkColorGreen":1.0,"bkColorBlue":1.0,"bkAlpha":1.0}
+						},{
+							"x": 70,
+							"y": 25,
+							"height": 20,
+							"width": 250,
+							"type": "Label",
+							"textFontSize":13,
+							"textFont":"",
+							"alignment" :1,
+							"text":"2014-04-30",
+							"elements":{},
+							"textColor":{"bkColorRed":0.0,"bkColorGreen":0.0,"bkColorBlue":0.0,"bkAlpha":1.0},
+							"bgColor":{"bkColorRed":1.0,"bkColorGreen":1.0,"bkColorBlue":1.0,"bkAlpha":1.0}
+						},{
+							"x": 10,
+							"y": 0,
+							"height": 60,
+							"width": 60,
+							"type": "Button",
+							"title":"<<",
+							"elements":{},
+							"actions":
+		 					[
+								{
+								 	"transitionType":"push",
+								 	"transitionDelay": 0, 
+								 	"transitionDirection": "right",
+								 	"transitionDuration": 0.75,
+								 	"target": 1386064627839,
+								 	"type": "jumpto"
+		 						}
+		 					]
+						}
+					]
+				},{
+					"x": 0,
+					"y": 60,
+					"height": 508,
+					"width": 320,
+					"type": "ScrollView",
+					"bgColor":{"bkColorRed":1.0,"bkColorGreen":1.0,"bkColorBlue":1.0,"bkAlpha":1.0},
+					"contentSize":{"contentSizeWidth":320,"contentSizeHeight":1016},
+					"contentOffset":{"anchorOriginX":0,"anchorOriginY":0},
+					"orientation":"horizontal or vertical",
+					"elements":
+					[
+						{
+							"x": 0,
+							"y": 0,
+							"height": 200,
+							"width": 320,
+							"type": "ImageView",
+							"elements":{},
+							"imageName":"11.png"
+						},{
+							"x": 0,
+							"y": 200,
+							"height": 200,
+							"width": 320,
+							"type": "ImageView",
+							"elements":{},
+							"imageName":"12.png"
+						},{
+							"x": 0,
+							"y": 400,
+							"height": 200,
+							"width": 320,
+							"type": "ImageView",
+							"elements":{},
+							"imageName":"13.png"
+						},{
+							"x": 0,
+							"y": 600,
+							"height": 200,
+							"width": 320,
+							"type": "ImageView",
+							"elements":{},
+							"imageName":"14.png"
+						},{
+							"x": 0,
+							"y": 800,
+							"height": 200,
+							"width": 320,
+							"type": "ImageView",
+							"elements":{},
+							"imageName":"15.png"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+
+
+
+
+

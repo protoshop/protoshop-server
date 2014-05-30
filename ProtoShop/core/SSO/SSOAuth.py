@@ -34,7 +34,7 @@ def SSOAuthCallBack(request):
 		resultDic.message = ''
 	else:
 		
-		conn=MySQLdb.connect(host='localhost',user='protoshop',passwd='protoshop@wxd',db='ProtoShop_test',port=3306,charset='utf8')
+		conn=MySQLdb.connect(host=conf.DB_HOST,user=conf.DB_USERNAEM,passwd=conf.DB_PASSWD,db=conf.DB_NAME,port=conf.DB_PORT,charset='utf8')
 		cur=conn.cursor()
 		cur.execute("select * from auth_user where username = '%s'"%username)
 		result =  cur.fetchone(); 

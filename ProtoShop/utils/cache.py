@@ -29,7 +29,7 @@ class TokenModel(object):
 
 def connect_redis():
 	try:
-		pool = redis.ConnectionPool(host = conf.REDIS_HOST, port = conf.REDIS_PORT, db = conf.REDIS_DB)
+		pool = redis.ConnectionPool(host = conf.REDIS_HOST, port = conf.REDIS_PORT, db = conf.REDIS_DB ,password = conf.DB_PASSWD)
 		conn  = redis.Redis(connection_pool = pool)
 		return conn
 	except (Exception) as e:

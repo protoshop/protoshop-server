@@ -42,7 +42,7 @@ class PSLabel(PSView):
 	testName = 2
 	def __init__(self, frame):
 		super(PSLabel, self).__init__(frame)
-		self.name = 'label'+'_%d%d%d%d'%(int(self.frame.originX),int(self.frame.originY),int(self.frame.width),int(self.frame.height))
+		self.name = 'label'+'_%d%d%d%d'%(int(abs(self.frame.originX)),int(abs(self.frame.originY)),int(abs(self.frame.width)),int(abs(self.frame.height)))
 		self.text = ''
 		self.alignment = 0
 		self.fontSize = 15
@@ -78,7 +78,7 @@ class PSImageView(PSView):
 	"""docstring for PSImageView"""
 	def __init__(self, frame,imageName):
 		super(PSImageView, self).__init__(frame)
-		self.name = 'imageView'+'_%d%d%d%d'%(int(self.frame.originX),int(self.frame.originY),int(self.frame.width),int(self.frame.height))
+		self.name = 'imageView'+'_%d%d%d%d'%(int(abs(self.frame.originX)),int(abs(self.frame.originY)),int(abs(self.frame.width)),int(abs(self.frame.height)))
 		self.imageName = imageName
 		self.imageTemplateStr = '	$imageViewDic["imageName"] = imagePath.."$imageName"\n\
 	local $imageView = self:command_createImageview($superView,$info)\n'
@@ -101,10 +101,10 @@ class PSButton(PSView):
 
 	def __init__(self, frame):
 		super(PSButton, self).__init__(frame)
-		self.name = 'btn'+'_%d%d%d%d'%(int(self.frame.originX),int(self.frame.originY),int(self.frame.width),int(self.frame.height))
+		self.name = 'btn'+'_%d%d%d%d'%(int(abs(self.frame.originX)),int(abs(self.frame.originY)),int(abs(self.frame.width)),int(abs(self.frame.height)))
 		self.title = 'button'
 		self.actionStr = ''
-		self.actionName = 'action'+'_%d%d%d%d'%(int(self.frame.originX),int(self.frame.originY),int(self.frame.width),int(self.frame.height))
+		self.actionName = 'action'+'_%d%d%d%d'%(int(abs(self.frame.originX)),int(abs(self.frame.originY)),int(abs(self.frame.width)),int(abs(self.frame.height)))
 		self.titleColor = PSMakeColor()
 		self.targetName = ''
 		self.fontSize = 16
@@ -126,7 +126,7 @@ end\n\n'
 	 	print ''
 
 	def addClickAction(self,target):
-		actionName = self.actionName + '%d%d%d%d'%(int(self.frame.originX),int(self.frame.originY),int(self.frame.width),int(self.frame.height))
+		actionName = self.actionName + '%d%d%d%d'%(int(abs(self.frame.originX)),int(abs(self.frame.originY)),int(abs(self.frame.width)),int(abs(self.frame.height)))
 		actionStr = self.actionTemplateStr
 		actionStr = actionStr.replace('$actionName',str(actionName))
 		actionStr = actionStr.replace('$targetName',str(self.targetName))
@@ -140,7 +140,7 @@ end\n\n'
 	def CreateLua(self,superView,hasAction):
 		baseStr = super(PSButton,self).CreateLua(superView)
 		if hasAction:
-			actionName = self.actionName + '%d%d%d%d'%(int(self.frame.originX),int(self.frame.originY),int(self.frame.width),int(self.frame.height))
+			actionName = self.actionName + '%d%d%d%d'%(int(abs(self.frame.originX)),int(abs(self.frame.originY)),int(abs(self.frame.width)),int(abs(self.frame.height)))
 		else:
 			actionName = ''
 		buttonStr = self.buttonTemplateStr
@@ -165,7 +165,7 @@ class PSScrollView(PSView):
 	"""docstring for PSScrollView"""
 	def __init__(self, frame):
 		super(PSScrollView, self).__init__(frame)
-		self.name = 'scrollView'+'_%d%d%d%d'%(int(self.frame.originX),int(self.frame.originY),int(self.frame.width),int(self.frame.height))
+		self.name = 'scrollView'+'_%d%d%d%d'%(abs(int(self.frame.originX)),int(abs(self.frame.originY)),int(abs(self.frame.width)),int(abs(self.frame.height)))
 		self.contentOffSet = PSMakeContentOffSet()
 		self.contentSize = PSMakeContentSize()
 		self.scrollTemplateStr = '	$scrollNameDic["contentOffset"] = {anchorOriginX = $anchorOriginX,anchorOriginY = $anchorOriginY}\n\

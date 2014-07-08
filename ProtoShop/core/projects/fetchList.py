@@ -41,9 +41,9 @@ def fetchProjectList(device = '',token = ''):
 		
 		try:
 			if device == 0:
-				projects = Projects.objects.filter(Q(owner=ower)|Q(public=2))
+				projects = Projects.objects.filter(Q(owner=ower))
 			else :
-				projects = Projects.objects.filter(Q(owner=ower,platform=device)|Q(public=2,platform=device))
+				projects = Projects.objects.filter(Q(owner=ower,platform=device))
 			for x in range(len(projects)):
 				project = projects[x]
 				resultList.append(createProjectDic(project))

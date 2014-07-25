@@ -34,7 +34,7 @@ def FeedBack(token = '',email = '',content = '',source = ''):
 			return resultDic
 		else :
 			result = Token.get_token(token)
-			user = result[0]
+			user = result.userName
         	
 	try:
 		feedback = Feedback(user_name=user,
